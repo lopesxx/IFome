@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_layout_carrinho"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/background_card"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/fotoDaComidaCarrinho"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza1" />
+
+    <TextView
+        android:id="@+id/titulo_comida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="title"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fotoDaComidaCarrinho"
+        app:layout_constraintTop_toTopOf="@+id/fotoDaComidaCarrinho" />
+
+    <ImageView
+        android:id="@+id/btnRemoverItemCarrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fotoDaComidaCarrinho"
+        app:layout_constraintStart_toEndOf="@+id/fotoDaComidaCarrinho"
+        app:layout_constraintTop_toTopOf="@+id/fotoDaComidaCarrinho"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/minus" />
+
+    <TextView
+        android:id="@+id/text_quantidade_carrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:text="1"
+        android:textColor="#373b54"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRemoverItemCarrinho"
+        app:layout_constraintStart_toEndOf="@+id/btnRemoverItemCarrinho"
+        app:layout_constraintTop_toTopOf="@+id/btnRemoverItemCarrinho" />
+
+    <ImageView
+        android:id="@+id/btnAdicionarItemCarrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_quantidade_carrinho"
+        app:layout_constraintStart_toEndOf="@+id/text_quantidade_carrinho"
+        app:layout_constraintTop_toTopOf="@+id/text_quantidade_carrinho"
+        app:srcCompat="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/text_preco_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        android:textColor="#373b54"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/titulo_comida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="R$"
+        android:textColor="#ff3d00"
+        app:layout_constraintBottom_toBottomOf="@+id/text_preco_item"
+        app:layout_constraintEnd_toStartOf="@+id/text_preco_item"
+        app:layout_constraintTop_toTopOf="@+id/text_preco_item" />
+
+    <TextView
+        android:id="@+id/text_preco_total_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#373b54"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdicionarItemCarrinho"
+        app:layout_constraintEnd_toEndOf="@+id/text_preco_item"
+        app:layout_constraintTop_toTopOf="@+id/btnAdicionarItemCarrinho" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="R$"
+        android:textColor="#ff3d00"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_preco_total_item"
+        app:layout_constraintEnd_toStartOf="@+id/text_preco_total_item"
+        app:layout_constraintTop_toTopOf="@+id/text_preco_total_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>

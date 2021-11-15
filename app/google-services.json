@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "591145818700",
+    "project_id": "ifome-bf598",
+    "storage_bucket": "ifome-bf598.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591145818700:android:945f09452d67c350d772e9",
+        "android_client_info": {
+          "package_name": "com.marcelo.ifome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591145818700-4vid8ingf7tai91a7k6mq38iq61i63fd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marcelo.ifome",
+            "certificate_hash": "3ba0cc3f4ef82f60360df20e9b6a6ec4835a6add"
+          }
+        },
+        {
+          "client_id": "591145818700-lj6r7qr5o3lktla98gi28h6faefl2srm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEIapMYWilcY83I2cnmDPvs6rUwrJUZkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591145818700-lj6r7qr5o3lktla98gi28h6faefl2srm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
