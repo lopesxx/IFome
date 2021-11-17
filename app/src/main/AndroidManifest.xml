@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IFome">
         <activity
+            android:name=".Activity.PerfilActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.CarrinhoActivity"
             android:exported="false" />
         <activity

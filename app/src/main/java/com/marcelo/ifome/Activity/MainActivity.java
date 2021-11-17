@@ -34,9 +34,11 @@ public class MainActivity extends AppCompatActivity {
     private void bottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.btnCarrinho);
         LinearLayout btnHome = findViewById(R.id.btnHome);
+        LinearLayout btnProfile = findViewById(R.id.btnPerfil);
 
         floatingActionButton.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, CarrinhoActivity.class)));
-        btnHome.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, CarrinhoActivity.class)));
+        btnHome.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, MainActivity.class)));
+        btnProfile.setOnClickListener(V -> startActivity(new Intent(MainActivity.this, PerfilActivity.class)));
     }
 
     private void recyclerViewPopular() {

@@ -44,20 +44,17 @@ public class CarrinhoActivity extends AppCompatActivity {
     private void bottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.btnCarrinho);
         LinearLayout btnHome = findViewById(R.id.btnHome);
+        LinearLayout btnProfile = findViewById(R.id.btnPerfil);
 
         floatingActionButton.setOnClickListener(v -> startActivity(new Intent(CarrinhoActivity.this, CarrinhoActivity.class)));
         btnHome.setOnClickListener(v -> startActivity(new Intent(CarrinhoActivity.this, MainActivity.class)));
+        btnProfile.setOnClickListener(V -> startActivity(new Intent(CarrinhoActivity.this, PerfilActivity.class)));
     }
 
     private void iniciarLista() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerViewProdutosCarrinho.setLayoutManager(linearLayoutManager);
-        produtosCarrinhoAdapter = new CarrinhoAdapter(managementCard.getListaDeComidaDomains(), this, new ChangeNumberItemListener() {
-            @Override
-            public void changed() {
-                calcularCarrinho();
-            }
-        });
+        produtosCarrinhoAdapter = new CarrinhoAdapter(managementCard.getListaDeComidaDomains(), this, this::calcularCarrinho);
         recyclerViewProdutosCarrinho.setAdapter(produtosCarrinhoAdapter);
         if(managementCard.getListaDeComidaDomains().isEmpty()) {
             text_CarrinhoVazio.setVisibility(View.VISIBLE);
